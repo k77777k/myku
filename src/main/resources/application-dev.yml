@@ -1,0 +1,35 @@
+server:
+  port: 8087
+  servlet:
+    context-path: /springboot
+
+person:
+  aname: 张三
+  age: 18
+  address: 郑州
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql:///news?characterEncoding=utf-8&serverTimezone=UTC
+    username: root
+    password: 123456
+    type: com.alibaba.druid.pool.DruidDataSource
+  freemarker:
+    suffix: .ftl
+
+mybatis:
+  mapper-locations: mapper/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
+  type-aliases-package: com.qf.springboot1116.pojo
+#分页助手
+pagehelper:
+  helperDialect: mysql
+  reasonable: true
+  supportMethodsArguments: true
+  params: count=countSql
+#输出mybatis接口所在包下的信息
+logging:
+  level:
+    com.qf.springboot1116.mapper: debug
+

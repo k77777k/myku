@@ -1,0 +1,7 @@
+server:
+  port: 8089
+
+person:
+  aname: 快乐风男
+  age: 18
+  address: 瓦罗兰
