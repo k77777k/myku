@@ -20,7 +20,8 @@ public class FtlController {
         List<NewsDetail> all = newsDetailMapper.selectAll();
         model.addAttribute("all", all);
         model.addAttribute("name", "张三");
-
+        System.out.println("ssssssssssss");
         return "index";
     }
+
 }
